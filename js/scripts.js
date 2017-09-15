@@ -25,7 +25,7 @@ $(document).ready(function(){
       $("#ruby").show();
     } else {
       if ((question1Input + question2Input + question3Input + question4Input + question5Input) <= 6){
-        $("#css").show();
+        $("#design").show();
       } else if ((question1Input + question2Input + question3Input + question4Input + question5Input) > 6 && (question1Input + question2Input + question3Input + question4Input + question5Input) <= 10){
         $("#ruby").show();
       } else if ((question1Input + question2Input + question3Input + question4Input + question5Input) > 10 && (question1Input + question2Input + question3Input + question4Input + question5Input) <= 14){
@@ -35,5 +35,19 @@ $(document).ready(function(){
       } else if ((question1Input + question2Input + question3Input + question4Input + question5Input) > 17 && (question1Input + question2Input + question3Input + question4Input + question5Input) <= 23){
         $("#net").show();
     }};
+
+    $("button#submit").fadeOut();
+    $("button#restart").show();
   });
+
+  $("button#restart").click(function(){
+    $("#design").hide();
+    $("#php").hide();
+    $("#android").hide();
+    $("#ruby").hide();
+    $("#net").hide();
+    $("button#restart").fadeOut();
+    $("button#submit").fadeIn();
+  });
+
 });
