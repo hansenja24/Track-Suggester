@@ -31,3 +31,13 @@ h2#start{
 h2#start:hover{
   text-shadow: 2px 2px #dee6f2;
 }
+
+.note{
+  color:#f98490;
+}
+
+img{
+  float:left;
+  height:160px;
+  margin-right: 27px;
+}
